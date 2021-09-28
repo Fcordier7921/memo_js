@@ -1,0 +1,10 @@
+.box {
+    background-color: crimson;
+    width: 50%;
+    height: 50VH;
+    margin-top: 10%;
+}
+
+input {
+    margin-top: 10px;
+}
