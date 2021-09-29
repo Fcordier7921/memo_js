@@ -2,11 +2,11 @@
 
 const prommesse1 = new Promise((resolve, reject) => {
         // resolve('les donnés sont là!')
-        reject('erreur');
+        reject('Erreur');
     })
     .then((valeur) => {
         console.log(valeur);
     })
     .catch(() => {
-        console.log("erreur");
+        console.log("erreur les donné ne sont pas là");
     })

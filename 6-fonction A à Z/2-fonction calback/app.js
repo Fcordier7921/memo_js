@@ -1,6 +1,6 @@
-const tab = [1, 2, 3, 4, 5, 6];
+const tab = [1, 2, 3, "tutu"];
 
-tab.forEach(item => {
+tab.forEach(item => { //item et la valeur du tableau, forEach veux dire pour chaque élément du tableau 
     console.log(item);
 })
 
