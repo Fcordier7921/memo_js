@@ -10,7 +10,7 @@ if (true) {
     console.log(foo);
 }
 
-//variable dans une fonction l'accé rezste dans la fontion
+//variable dans une fonction l'accé reste dans la fontion
 function faa() {
     let bar = 3;
     console.log(bar);

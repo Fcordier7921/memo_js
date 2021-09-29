@@ -1,6 +1,6 @@
 let i = 10;
 
-while (i > 0) { //while temque la condition soit vrai
+while (i > 0) { //while temps que la condition soit vrai 
     console.log(i);
     i--;
 }
