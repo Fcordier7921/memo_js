@@ -3,3 +3,4 @@
 (function() {
     console.log("hello word");
 })()
+//on ne peut pas déclaré des fonction anonime sans faire ca

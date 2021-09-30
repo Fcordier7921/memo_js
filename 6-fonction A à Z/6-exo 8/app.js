@@ -10,11 +10,8 @@ function add(a, b) {
 }
 console.log(add(5, 9));
 
-
-
-
-
-
+const multiplication = (u, o) => u * o;
+console.log(multiplication(58, 9));
 
 
 // 2. Écrire une fonction d'ordre supérieur, qui prend une fonction callback en paramètre et un tableau rempli de nombres.

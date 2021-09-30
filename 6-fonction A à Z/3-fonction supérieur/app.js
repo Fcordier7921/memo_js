@@ -1,7 +1,7 @@
-//les fonction d'odre supérieur ce sont de fonction qui vons prende 
+/*les fonction d'odre supérieur ce sont de fonction qui vons prende 
 //un fonction en paramére ou retouné une fonction
-//elle permet de regroupe des action dans une fonstion
-
+elle permet de regroupe des action dans une fonstion
+*/
 const notSortedArr = [1, 5, 66, 7478, 12, 558, 511, 4, 5, 21, 1, 45, 25, 1, 454];
 
 const newArray = [];
