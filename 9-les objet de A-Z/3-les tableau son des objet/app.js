@@ -1,6 +1,6 @@
-console.log('replace :');
-const str = 'Lorem ipsum dolor sit amet. Tutu 165165165';
+const tab = ['a', 'b', 'c'];
 
-const regex = /[0-9\s]/;
-
-console.log(str.replace(/o/g, 'zzz'));
+console.log(tab);
+console.log(typeof tab);
+console.log(tab.length);
+console.log(tab[0]);

@@ -1,6 +1,16 @@
-console.log('replace :');
-const str = 'Lorem ipsum dolor sit amet. Tutu 165165165';
+const voiture = {
+    couleur: 'noire',
+    marque: 'peugeot',
+    annee: 2007,
+    myFunction: function() {
+        console.log(this.annee);
+    }
+}
 
-const regex = /[0-9\s]/;
+let nvFunction = voiture.myFunction.bind(voiture);
 
-console.log(str.replace(/o/g, 'zzz'));
+nvFunction();
+console.log(nvFunction);
+
+const btn = document.querySelector('button');
+btn.addEventListener('click', voiture.myFunction.bind(voiture));
