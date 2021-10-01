@@ -1,5 +1,6 @@
 const bookList = document.querySelector('.book-list');
 const bookForm = document.querySelector('.book-form');
+const container = document.querySelector('.container');
 
 class Book {
 
@@ -20,7 +21,21 @@ class Book {
 
         bookList.appendChild(row);
     }
-    cle
+    clearFiedls() {
+        document.getElementById('titre').value = "";
+        document.getElementById('auteur').value = "";
+        document.getElementById('annee').value = "";
+    }
+    showAlert(message, className) {
+        const alert = document.createElement('div');
+        alert.className = `alert ${className}`;
+        alert.appendChild(document.createTextNode(message));
+        container.insertBefore(alert, bookForm);
+        setTimeout(() => {
+            document.querySelector('.alert').remove();
+        }, 2500)
+
+    }
 
 }
 
@@ -41,8 +56,18 @@ bookForm.addEventListener('submit', (e) => {
 
     const book = new Book(titre, auteur, annee);
 
-    book.addBookToList(book);
+    if (titre === "" || auteur === "" || annee === "") {
+        book.showAlert('Remplissez les champs !', 'error');
+    } else {
+        book.addBookToList(book);
+        book.clearFiedls();
+        book.showAlert('Livre ajouté', 'success')
+
+    }
+
+
 })
+
 
 bookList.addEventListener('click', (e) => {
     const ui = new Interface();
