@@ -29,10 +29,14 @@
 function Personage(nom, taille) {
     this.nom = nom;
     this.taille = taille;
-    this.avancer = function() {
-        console.log(`${this.nom} avance..`);
-    }
+    // this.avancer = function() {
+    //     console.log(`${this.nom} avance..`);
+    // }
 }
+Personage.prototype.avancer = function() {
+    console.log(`${this.nom} avance..`);
+}
+
 const perso1 = new Personage('raspotine', 190);
 const perso2 = new Personage('césart', 210);
 perso1.avancer();
