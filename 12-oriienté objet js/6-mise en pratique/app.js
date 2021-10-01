@@ -20,7 +20,17 @@ class Book {
 
         bookList.appendChild(row);
     }
+    cle
 
+}
+
+class Interface {
+
+    deleteBook(target) {
+        if (target.className === 'delete') {
+            target.parentElement.parentElement.remove();
+        }
+    }
 }
 bookForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -32,4 +42,9 @@ bookForm.addEventListener('submit', (e) => {
     const book = new Book(titre, auteur, annee);
 
     book.addBookToList(book);
+})
+
+bookList.addEventListener('click', (e) => {
+    const ui = new Interface();
+    ui.deleteBook(e.target);
 })
