@@ -24,17 +24,12 @@ class Voiture {
         console.log(`Date de sortei de catte voiture ${this.annee}`);
     }
 }
-const voituer1 = new Voiture('ford', 2009, 0);
-const voituer2 = new Voiture('peugot', 2011, 5);
-const voituer3 = new Voiture('seat', 2020, 6);
-console.log(voituer1, voituer2, voituer3);
 
-voituer1.dateSortie()
-voituer2.dateSortie()
-voituer3.dateSortie()
-
-console.log(voituer1);
-voituer1
-    .rajoutOption('2 porte')
-    .rajoutOption('tutu')
-    .rajoutOption('bubu')
+class moto extends Voiture {
+    assurance() {
+        console.log("vous avez pris une assurance");
+    }
+}
+const moto1 = new moto('susuki', 2012, 'vert');
+moto1.assurance();
+console.log(moto1);
