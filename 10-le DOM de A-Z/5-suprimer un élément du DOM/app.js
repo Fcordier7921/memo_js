@@ -18,8 +18,8 @@ nvEl.innerText = "Nouvel item !";
 // liste.appendChild(nvEl);
 console.log(premierTitre);
 
-liste.children[2].remove();
+liste.children[2].remove(); //suprimer le 3 éléments
 
 // liste.remove();
 
-liste.children[1].replaceWith(nvEl)
+liste.children[1].replaceWith(nvEl); //remplace ulélément 2

@@ -7,7 +7,7 @@ const voiture = {
     }
 }
 
-let nvFunction = voiture.myFunction.bind(voiture);
+let nvFunction = voiture.myFunction.bind(voiture); //lier la fonction avec l'objet pour que this fasse applellle a conteste qe la fonction
 
 nvFunction();
 console.log(nvFunction);

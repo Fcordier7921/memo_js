@@ -1,16 +1,16 @@
 // les selecteur du DOM
 
-const premierTitre = document.getElementsByClassName('premiertitre');
+const premierTitre = document.getElementsByClassName('premiertitre'); //sélection des class c'est un tabealu
 
-console.log(premierTitre);
+console.log(`sélection tout les class premier titre =>`, premierTitre);
 
-const seconTitre = document.getElementById('premier-id');
+const seconTitre = document.getElementById('premier-id'); //selectionner l'éléméne id il rent diréctement l'élément du dom
 
-console.log(seconTitre);
+console.log(`sélection l'id premier id =>`, seconTitre);
 
-const titreNu = document.querySelector('h3');
-console.log(titreNu);
+const titreNu = document.querySelector('h3'); //sélectionne le premier élement  qu'il soit un class ou un id ou h3 etc..
+console.log(`sélection d'un seul élément =>`, titreNu);
 
-const allintem = document.querySelectorAll('.item-liste');
+const allintem = document.querySelectorAll('.item-liste'); //retourne un tableau
 
-console.log(allintem);
+console.log(`sélection de tous éléments =>`, allintem);

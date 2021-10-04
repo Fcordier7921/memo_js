@@ -19,5 +19,5 @@ console.log(kitty.couleur); //dote notaition
 console.log(kitty['couleur']); //braquette notaition 
 
 delete kitty.poids; //suprimer une propriété ca valeur
-console.log(`delete d'une valeur de l'objet `, kitty.poids);
-console.log(kitty.nvObj.nvnvObj.pp);
+console.log(`delete d'une valeur de l'objet =>`, kitty.poids);
+console.log(kitty.nvObj.nvnvObj.pp); //notation objet inbriqué dans un autre objet
