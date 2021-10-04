@@ -1,4 +1,4 @@
-const kitty = {
+const kitty = { //objet kitty convention d'écriture 
     race: 'Siamois',
     poids: 3,
     couleur: 'gris',
@@ -15,9 +15,9 @@ const kitty = {
         }
     }
 }
-console.log(kitty.couleur);
-console.log(kitty['couleur']);
+console.log(kitty.couleur); //dote notaition
+console.log(kitty['couleur']); //braquette notaition 
 
-delete kitty.poids;
-console.log(kitty.poids);
+delete kitty.poids; //suprimer une propriété ca valeur
+console.log(`delete d'une valeur de l'objet `, kitty.poids);
 console.log(kitty.nvObj.nvnvObj.pp);
