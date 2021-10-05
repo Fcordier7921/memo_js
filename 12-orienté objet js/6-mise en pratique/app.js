@@ -19,7 +19,7 @@ class Book {
         <td>${book.annee}</td>
         <td><button class="delete">X</button></td>`;
 
-        bookList.appendChild(row);
+        bookList.appendChild(row); //on la rajout a notre liste
     }
     clearFiedls() {
         document.getElementById('titre').value = "";
@@ -48,7 +48,7 @@ class Interface {
     }
 }
 bookForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+    e.preventDefault(); // empéche l'envoie de donné qu'elle reste ne local
 
     const titre = document.getElementById('titre').value;
     const auteur = document.getElementById('auteur').value;

@@ -25,7 +25,7 @@ class Voiture {
     }
 }
 
-class moto extends Voiture {
+class moto extends Voiture { //l'extends vas prende les même propriétéque les classe voiture
     assurance() {
         console.log("vous avez pris une assurance");
     }

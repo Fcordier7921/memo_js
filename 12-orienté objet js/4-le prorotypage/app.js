@@ -31,8 +31,8 @@ class moto extends Voiture {
     }
 }
 const moto1 = new moto('susuki', 2012, 'vert');
-moto1.assurance();
+// moto1.assurance();
 console.log(moto1);
 
-console.log({ a: 'a' }.hasOwnProperty('a'));
+console.log({ a: 'a' }.hasOwnProperty('a')); //différente fonction qui son dans le proto
 console.log([1, 2, 3].pop());

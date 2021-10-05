@@ -17,11 +17,11 @@ class Voiture {
     }
     rajoutOption(nomOption) {
         this.option++;
-        console.log(`Rajout de ${nomOption}, nombre d'option: ${this.option}`);
-        return this;
+        console.log(`Rajout de l'option  ${nomOption}, nombre d'option: ${this.option}`);
+        return this; //on retour kle context pour uriliqer une chaine de méthode
     }
-    dateSortie() {
-        console.log(`Date de sortei de catte voiture ${this.annee}`);
+    dateSortie() { //créer une métode 
+        console.log(`Date de sortie de cette voiture ${this.annee}`);
     }
 }
 const voituer1 = new Voiture('ford', 2009, 0);
@@ -35,6 +35,6 @@ voituer3.dateSortie()
 
 console.log(voituer1);
 voituer1
-    .rajoutOption('2 porte')
+    .rajoutOption('2 porte') // rajout d'un option il faut rappelle le contex de la méthode s'il y en a plusieur
     .rajoutOption('tutu')
     .rajoutOption('bubu')

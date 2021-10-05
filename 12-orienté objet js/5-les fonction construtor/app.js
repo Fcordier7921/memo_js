@@ -33,8 +33,8 @@ function Personage(nom, taille) {
     //     console.log(`${this.nom} avance..`);
     // }
 }
-Personage.prototype.avancer = function() {
-    console.log(`${this.nom} avance..`);
+Personage.prototype.avancer = function() { //pour rajouter dans le prototyp
+    console.log(`${this.nom} avance..`); //le this fait toujour appelle aau personage de la fonction
 }
 
 const perso1 = new Personage('raspotine', 190);

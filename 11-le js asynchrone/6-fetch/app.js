@@ -3,9 +3,9 @@ const btn = document.querySelector('.btn')
 const xhr = new XMLHttpRequest();
 
 btn.addEventListener('click', () => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-        .then(reponse => reponse.json())
-        .then(data => {
+    fetch('https://jsonplaceholder.typicode.com/posts') //fetch en premier argumetnl'url de l'api qui retoune un promesse
+        .then(reponse => reponse.json()) //on utilise json retour une promesse des donné
+        .then(data => { //on retrouve nos donné
             for (i = 0; i < data.length; i++) {
 
                 let nexLi = document.createElement('li');
