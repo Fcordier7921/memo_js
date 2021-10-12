@@ -1,5 +1,7 @@
 // les selecteur du DOM
 
+const h1 = document.getElementsByTagName('h1');
+console.log(h1); //pour selectionner une bamlise
 const premierTitre = document.getElementsByClassName('premiertitre'); //sélection des class c'est un tabealu
 
 console.log(`sélection tout les class premier titre =>`, premierTitre);
