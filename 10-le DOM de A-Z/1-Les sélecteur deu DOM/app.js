@@ -15,4 +15,4 @@ console.log(`sélection d'un seul élément =>`, titreNu);
 
 const allintem = document.querySelectorAll('.item-liste'); //retourne un tableau
 
-console.log(`sélection de tous éléments =>`, allintem);
+console.log(`sélection de tous éléments =>`, allintem); //afficher l'élément

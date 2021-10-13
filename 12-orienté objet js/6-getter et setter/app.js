@@ -1,14 +1,3 @@
-// const voiture = {
-//     marque: 'ford',
-//     annee: 2009,
-//     couleur: 'blanche',
-//     rouler() {
-//         console.log('Vroom');
-//         console.log(this.annee);
-//     }
-// }
-
-
 class Voiture {
     constructor(marque, annee, option) {
         this.marque = marque;
@@ -23,19 +12,20 @@ class Voiture {
     dateSortie() { //créer une métode 
         console.log(`Date de sortie de cette voiture ${this.annee}`);
     }
+    get marqueD() {
+            return `la marque de cet voiture et: ${this.marque}`
+        } //il va agir comme si c'éttai une propriété et récupére la propriété
+
+    //muttateur permet de définfir un propriété et de la modifier
+    set marqueDSet(valeur) {
+        [this.marque, this.annee] = valeur.split(' '); //splite transforme un chaine de 
+    }
+
 }
 const voituer1 = new Voiture('ford', 2009, 0);
 const voituer2 = new Voiture('peugot', 2011, 5);
 const voituer3 = new Voiture('seat', 2020, 6);
 console.log(voituer1, voituer2, voituer3);
-
-voituer1.dateSortie()
-voituer2.dateSortie()
-voituer3.dateSortie()
-
-console.log(voituer1);
-voituer1
-    .rajoutOption('2 porte') // rajout d'un option il faut rappelle le contex de la méthode s'il y en a plusieur
-    .rajoutOption('tutu')
-    .rajoutOption('bubu')
-console.log(voituer1);
+console.log(voituer1.marqueD);
+voituer2.marqueDSet = "ferrari 2005";
+console.log(voituer2);
